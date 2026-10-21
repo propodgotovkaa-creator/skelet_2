@@ -16,3 +16,7 @@
 `assets/blaster.webp` создан встроенным ImageGen. Итоговый промпт:
 
 > Use case: stylized-concept. Asset type: transparent sprite for a children's first-person fantasy arcade. A beautifully detailed playful toy automatic blaster viewed STRICTLY from behind, centered symmetrical first person perspective, pointing straight away from viewer toward top center of image. The muzzle tip at top center, rear stock and grip fill the lower center. Not side view. Rich teal enamel, rounded sculpted shapes, warm brass and ivory trims, elegant tiny engraved stars, small luminous mint energy indicator, soft highlights and ambient occlusion, polished animated feature film 3D render. Friendly magical toy, clearly fictional, no real brand, no text, no hands, no bullets, no projectile, no flash. Tall narrow silhouette, approximately 40% image width and 90% image height, entirely within frame. True transparent background, isolated single object. High visual quality, crisp edges, sophisticated materials.
+
+## Обложка
+
+`assets/cover.jpg` создана встроенным ImageGen: шесть дружелюбных объёмных скелетов в волшебном лесу, бирюзово-золотой игрушечный бластер, резная деревянная табличка с точным названием «СТРЕЛЯЙ ПО СКЕЛЕТАМ». Стилистика и персонажи согласованы с игрой.

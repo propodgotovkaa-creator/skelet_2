@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#103b43"><title>Нашествие скелетов — читаем и играем</title><link rel="stylesheet" href="style.css?v=2"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#103b43"><title>Нашествие скелетов — читаем и играем</title><link rel="stylesheet" href="style.css?v=3"></head>
 <body>
 <main id="game" aria-label="Игра Нашествие скелетов">
  <canvas id="scene" width="1600" height="900" aria-label="Сказочный лес со скелетами"></canvas>
@@ -13,17 +13,17 @@
    <div class="letter-label">Гласные</div><div id="vowels" class="letters vowels" role="group" aria-label="Гласные"></div>
    <div class="letter-label">Согласные</div><div id="consonants" class="letters" role="group" aria-label="Согласные"></div>
    <fieldset><legend>Тип слогов</legend><div class="segments" id="types"><button type="button" data-type="open" aria-pressed="true">Открытые<small>МА · СО</small></button><button type="button" data-type="closed" aria-pressed="false">Закрытые<small>АМ · ОС</small></button><button type="button" data-type="mixed" aria-pressed="false">Смешанные<small>МА · ОС</small></button></div></fieldset>
-   <div class="options"><label>Слогов перед атакой<select id="count"><option>6</option><option>8</option><option selected>10</option><option>12</option><option>16</option></select></label><label>Скорость скелетов<select id="speed"><option value="slow">Медленная · 22 с</option><option value="normal" selected>Обычная · 13 с</option><option value="fast">Быстрая · 8 с</option></select></label></div>
+   <div class="options"><label>Слогов за всю игру<select id="count"><option>6</option><option>8</option><option selected>10</option><option>12</option><option>16</option></select></label><label>Скорость скелетов<select id="speed"><option value="slow">Медленная · 22 с</option><option value="normal" selected>Обычная · 13 с</option><option value="fast">Быстрая · 8 с</option></select></label></div>
    <p id="validation" role="status"> </p><button id="start" class="primary" type="submit">НАЧАТЬ ИГРУ <span>→</span></button>
   </form>
  </section>
  <div id="hud" hidden><div class="hud-pill"><span class="dot"></span><b id="round">Раунд 1</b><span class="divider"></span><span id="remaining">Осталось скелетов: 6</span></div><div class="hud-actions"><button id="pause" class="icon" aria-label="Пауза">Ⅱ</button><button id="menu-button" class="icon" aria-label="Вернуться в меню">⌂</button></div></div>
  <section id="reading" class="screen overlay" hidden><div class="reading-card"><span class="eyebrow" id="reading-round">РАУНД 1 · МАГИЯ ЧТЕНИЯ</span><h2>Прочитай — и к приключениям!</h2><p>Читай слоги вслух. Педагог поможет начать бой.</p><div id="syllables" aria-label="Слоги для чтения"></div><small id="combination-note"></small><button id="fight" class="primary">ПРОЧИТАЛ! К БОЮ! <span>→</span></button></div></section>
- <div id="countdown" hidden aria-live="polite"></div>
+ <div id="countdown" hidden aria-live="polite"><div class="ready-board" id="ready-board" data-step="1"><span class="ready-top">ЗАЩИТИ ВОЛШЕБНЫЙ ЛЕС</span><strong id="ready-title">Приготовься!</strong><span id="ready-subtitle">Приключение начинается</span><div class="ready-lights" aria-hidden="true"><i></i><i></i><i></i></div></div></div>
  <div id="battle-tip" hidden>Наводи прицел и нажимай на скелетов</div>
  <section id="result" class="screen overlay" hidden><div class="result-card"><span class="result-symbol" id="result-symbol">✦</span><span class="eyebrow" id="result-label"></span><h2 id="result-title"></h2><p id="result-copy"></p><button id="next" class="primary"></button><button id="result-menu" class="text-button">Вернуться к настройкам</button></div></section>
  <section id="paused" class="screen overlay" hidden><div class="result-card"><span class="eyebrow">МОЖНО ПЕРЕДОХНУТЬ</span><h2>Приключение подождёт</h2><p>Скелеты стоят на месте. Продолжим, когда будете готовы.</p><button id="resume" class="primary">ПРОДОЛЖИТЬ →</button><button id="pause-menu" class="text-button">Вернуться к настройкам</button></div></section>
  <p class="sr-only" id="announcement" aria-live="polite"></p>
 </main>
-<script src="art.js"></script><script src="game.js?v=2"></script>
+<script src="art.js"></script><script src="game.js?v=3"></script>
 </body></html>
